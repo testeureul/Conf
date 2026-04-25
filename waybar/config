@@ -37,7 +37,7 @@
             "idle_inhibitor",
             "custom/split",
             "custom/powerprofile",
-            "custom/themeswitcher",
+            "custom/bluetooth",
             "custom/closebracket"
         ]
     },
@@ -54,13 +54,6 @@
         "exec-tooltip": "~/.config/waybar/scripts/powerprofile.sh tooltip",
         "tooltip-format": "Power Profile: {} \nClick to cycle: Efficient → Normal → Overclocked"
     },
-    "custom/themeswitcher":{
-       "format": "",
-       "tooltip": true,
-      "tooltip-format": "Click to change theme",
-      "on-click": "~/.config/waybar/scripts/theme-switcher.sh next",
-      "on-click-right": "~/.config/scripts/theme-switcher.sh random"
-     },
 
     "group/workspaces":{
         "orientation": "horizontal",
@@ -206,8 +199,7 @@
             "custom/split",
             "pulseaudio",
             "backlight",
-            "custom/split",
-            "custom/bluetooth", 
+            "custom/split", 
             "custom/swaync",
             "battery",
             "custom/closebracket",
@@ -219,11 +211,8 @@
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "onclick" : "calendar"
     },
-    "custom/clipboard": {
-        "format": " ",
-        "tooltip": false,
-        "on-click": "~/.config/waybar/scripts/clipboard_menu.sh"
-    },
+   
+
     "battery": {
         "states": {
             "warning": 30,
